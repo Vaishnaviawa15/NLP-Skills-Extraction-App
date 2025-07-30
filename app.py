@@ -95,8 +95,8 @@ def extract_skills_from_text(text):
 
 # --- Streamlit User Interface ---
 st.set_page_config(layout="wide", page_title="Skill Extractor", page_icon="🚀")
-st.title("🚀 Interactive Skill Extractor")
-st.write("Paste a job description below to identify the key skills required. This tool uses a data-driven dictionary of common skills.")
+st.title("🚀 Job Skill Profiler")
+st.write("Instantly analyze any job description to identify the essential skills. Understand the core requirements of a role before you apply.")
 
 job_description = st.text_area(
     "Paste the Job Description Here:",
