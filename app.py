@@ -28,7 +28,9 @@ def load_resources():
             'network security', 'payroll management', 'performance management', 'pipeline management',
             'power bi', 'project management', 'relationship management', 'risk management', 'saas',
             'sales management', 'salesforce', 'sap', 'sql', 'stakeholder management', 'talent management',
-            'team management', 'territory management', 'time management', 'vendor management','python'
+            'team management', 'territory management', 'time management', 'vendor management','python',
+            'ms office', 'ms office suite','office 365','microsoft office', 'microsoft office suite',
+            'microsoft powerpoint', 'microsoft word'
         ],
         'Soft Skills': [
             'accountability', 'accounting', 'accounting principles', 'accounts payable', 'active directory',
@@ -48,9 +50,8 @@ def load_resources():
             'independent work', 'influence', 'influencing', 'influencing skills', 'information technology',
             'initiative', 'innovation', 'integrity', 'internal controls', 'interpersonal skills', 'jira',
             'judgment', 'lead generation', 'leadership', 'listening skills', 'market research', 'mentoring',
-            'mentorship', 'merchandising', 'microsoft office', 'microsoft office suite',
-            'microsoft powerpoint', 'microsoft word', 'motivation', 'ms office', 'ms office suite',
-            'multi-tasking', 'multitasking', 'negotiation', 'networking', 'office 365', 'onboarding',
+            'mentorship', 'merchandising', 'motivation','multi-tasking', 'multitasking' , 
+            'negotiation', 'networking', 'onboarding',
             'organization', 'organizational design', 'organizational development', 'organizational skills',
             'payroll administration', 'payroll processing', 'persuasion', 'pmp certification',
             'policy development', 'positive attitude', 'powerpoint', 'presentation skills', 'prioritization',
