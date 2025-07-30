@@ -18,7 +18,7 @@ from nltk.tokenize import word_tokenize
 # ==============================================================================
 # Step 1: Download NLTK Data Packages
 # ==============================================================================
-# This ensures all necessary components for text processing are available.
+
 print("✅ Importing libraries and downloading NLTK data...")
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
@@ -30,8 +30,7 @@ print("✅ Downloads complete.")
 # ==============================================================================
 # Step 2: Load Data from File Path
 # ==============================================================================
-# ⬇️ PASTE YOUR FILE PATH HERE
-# Right-click on 'all_job_post.csv' in the Colab file panel and select "Copy path"
+
 file_path = '/content/all_job_post.csv' # <-- PASTE YOUR PATH HERE
 
 try:
@@ -40,7 +39,7 @@ try:
 except FileNotFoundError:
     print(f"❌ ERROR: File not found at '{file_path}'.")
     print("Please make sure you have uploaded the file and the path is correct.")
-    # Stop execution if the file isn't found
+
     exit()
 
 
