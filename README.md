@@ -10,6 +10,7 @@ A Streamlit web app that uses NLP to instantly extract hard and soft skills from
 </p>
 
 <p align="center">
+<!-- IMPORTANT: Replace this URL with a screen recording/GIF of your actual app! -->
 <img src="https://i.imgur.com/your_gif_url_here.gif" alt="App Demo GIF" width="750"/>
 </p>
 
