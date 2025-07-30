@@ -15,7 +15,7 @@ A Streamlit web app that uses NLP to instantly extract hard and soft skills from
 
 🎯 About the Project
 
-For students and professionals, job descriptions are often dense and difficult to parse. This tool solves that problem by providing an automated, clear, and immediate analysis of job requirements. It helps users quickly identify the crucial skills needed for a role, understand industry trends, and pinpoint personal skill gaps for career development. This application is a key component of a larger capstone project on personalized career prediction.
+For students and professionals, job descriptions are often dense and difficult to parse. This tool solves that problem by providing an automated, clear, and immediate analysis of job requirements. It helps users quickly identify the crucial skills needed for a role, understand industry trends, and pinpoint personal skill gaps for career development. 
 
 
 ✨ Key Features
