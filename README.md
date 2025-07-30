@@ -4,14 +4,14 @@ A Streamlit web app that uses NLP to instantly extract hard and soft skills from
 </p>
 
 <p align="center">
-<img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python">
-<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-1.10%2B-red?style=for-the-badge&logo=streamlit">
-<img alt="NLTK" src="https://img.shields.io/badge/NLTK-3.7%2B-green?style=for-the-badge&logo=nltk">
+<img alt="Python" src="https://www.google.com/search?q=https://img.shields.io/badge/Python-3.9%252B-blue%3Fstyle%3Dfor-the-badge%26logo%3Dpython">
+<img alt="Streamlit" src="https://www.google.com/search?q=https://img.shields.io/badge/Streamlit-1.10%252B-red%3Fstyle%3Dfor-the-badge%26logo%3Dstreamlit">
+<img alt="NLTK" src="https://www.google.com/search?q=https://img.shields.io/badge/NLTK-3.7%252B-green%3Fstyle%3Dfor-the-badge%26logo%3Dnltk">
 </p>
 
 <p align="center">
-<!-- IMPORTANT: Replace this URL with a screen recording/GIF of your actual app! -->
-<img src="https://i.imgur.com/your_gif_url_here.gif" alt="App Demo GIF" width="750"/>
+<!-- IMPORTANT: To make this work, record a short GIF of your app and upload it to a site like imgur.com. Then, replace the URL below with your GIF's URL. -->
+<img src="https://www.google.com/search?q=https://i.imgur.com/your_gif_url_here.gif" alt="App Demo GIF" width="750"/>
 </p>
 
 📋 Table of Contents
