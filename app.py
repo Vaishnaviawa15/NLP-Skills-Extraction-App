@@ -21,14 +21,14 @@ def load_resources():
         'Hard Skills': [
             'account management', 'budget management', 'cash flow management', 'change management',
             'client relationship management', 'compensation management', 'crm', 'crm software',
-            'crm systems', 'customer relationship management', 'data analysis', 'data analytics',
+            'crm systems', 'customer relationship management', 'data analytics',
             'data entry', 'data management', 'erp systems', 'excel', 'financial analysis',
             'financial management', 'hr management', 'human resources management', 'inventory management',
             'it management', 'market analysis', 'marketing', 'microsoft excel', 'ms excel',
             'network security', 'payroll management', 'performance management', 'pipeline management',
             'power bi', 'project management', 'relationship management', 'risk management', 'saas',
             'sales management', 'salesforce', 'sap', 'sql', 'stakeholder management', 'talent management',
-            'team management', 'territory management', 'time management', 'vendor management'
+            'team management', 'territory management', 'time management', 'vendor management','python'
         ],
         'Soft Skills': [
             'accountability', 'accounting', 'accounting principles', 'accounts payable', 'active directory',
@@ -63,7 +63,7 @@ def load_resources():
             'strategic thinking', 'succession planning', 'talent acquisition', 'team building',
             'team collaboration', 'team leadership', 'teamwork', 'technical support', 'training',
             'training and development', 'troubleshooting', 'valid driver\'s license', 'visual merchandising',
-            'work ethic', 'workday', 'workforce planning'
+            'work ethic', 'workday', 'workforce planning','data analysis'
         ]
     }
     hard_skills = set(DATA_DRIVEN_SKILL_DB['Hard Skills'])
