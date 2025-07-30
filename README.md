@@ -1,43 +1,32 @@
+<p align="center">
 🚀 NLP Skill Extractor
+</p>
+
 <p align="center">
 A Streamlit web app that uses NLP to instantly extract hard and soft skills from job descriptions.
 </p>
 
-<p align="center">
-<img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python">
-<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-1.10%2B-red?style=for-the-badge&logo=streamlit">
-<img alt="NLTK" src="https://img.shields.io/badge/NLTK-3.7%2B-green?style=for-the-badge&logo=nltk">
-</p>
 
 <p align="center">
 <!-- IMPORTANT: To make this work, record a short GIF of your app and upload it to a site like imgur.com. Then, replace the URL below with your GIF's URL. -->
 <img src="https://i.imgur.com/your_gif_url_here.gif" alt="App Demo GIF" width="750"/>
 </p>
 
-📋 Table of Contents
-About the Project
-
-Key Features
-
-Technologies Used
-
-Project Workflow
-
-Live Application
 
 🎯 About the Project
 For students and professionals, job descriptions are often dense and difficult to parse. This tool solves that problem by providing an automated, clear, and immediate analysis of job requirements. It helps users quickly identify the crucial skills needed for a role, understand industry trends, and pinpoint personal skill gaps for career development. This application is a key component of a larger capstone project on personalized career prediction.
 
+
 ✨ Key Features
-Automated Skill Extraction: Instantly parses job descriptions to identify key skills.
+    1.Automated Skill Extraction: Instantly parses job descriptions to identify key skills.
 
-Hard & Soft Skill Categorization: Intelligently separates technical abilities from interpersonal qualities.
+    2.Hard & Soft Skill Categorization: Intelligently separates technical abilities from interpersonal qualities.
 
-Data-Driven Dictionary: Utilizes a skill dictionary built from analyzing thousands of real-world job postings.
+  3.Data-Driven Dictionary: Utilizes a skill dictionary built from analyzing thousands of real-world job postings.
 
-Interactive Web Interface: A simple and user-friendly interface powered by Streamlit.
+   4.Interactive Web Interface: A simple and user-friendly interface powered by Streamlit.
 
-Real-Time Analysis: Provides immediate feedback with no wait time.
+5.Real-Time Analysis: Provides immediate feedback with no wait time.
 
 🛠️ Technologies Used
 Python: Core programming language.
