@@ -6,11 +6,11 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 
 
-st.info("Loading NLTK models...")
+
 nltk.download('punkt_tab', quiet=True)
 nltk.download('stopwords', quiet=True)
 nltk.download('wordnet', quiet=True)
-st.success("Models loaded successfully.")
+
 
 
 # --- Caching Resources for Speed ---
