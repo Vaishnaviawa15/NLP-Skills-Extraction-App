@@ -1,13 +1,34 @@
-NLP-Powered Skill Extractor for Job Descriptions
+🚀 NLP-Powered Skill Extractor for Job Descriptions
+<p align="center">
+<img src="https://i.imgur.com/your_gif_url_here.gif" alt="App Demo GIF" width="700"/>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python" alt="Python Version">
+<img src="https://img.shields.io/badge/Streamlit-1.10%2B-red?style=for-the-badge&logo=streamlit" alt="Streamlit Version">
+<img src="https://img.shields.io/badge/NLTK-3.7%2B-green?style=for-the-badge&logo=nltk" alt="NLTK Version">
+</p>
+
 This repository contains the source code for an interactive web application that automatically extracts and categorizes key skills from job descriptions. This tool is a functional component of a larger capstone project focused on personalized career prediction for students.
 
 Live Application: https://nlp-skills-extraction-app-miniproject.streamlit.app/
 
+📋 Table of Contents
+Project Overview & Problem Solved
+
+Key Features
+
+Technical Workflow & Methodology
+
+How to Use the Application
+
+Technologies Used
+
 1. Project Overview & Problem Solved
-Overview
+🎯 Overview
 In the vast landscape of job opportunities, understanding the specific requirements for a role is a critical first step. This project provides a web-based tool, built with Python and Streamlit, that leverages Natural Language Processing (NLP) to demystify job descriptions. By simply pasting in the text of a job posting, users can instantly receive a structured list of the essential "Hard Skills" (technical competencies) and "Soft Skills" (interpersonal qualities) required for the position.
 
-The Problem It Solves
+🧩 The Problem It Solves
 For students and aspiring professionals, job descriptions can often be dense, filled with jargon, and difficult to parse. This creates a significant challenge:
 
 Lack of Clarity: It's hard to quickly identify the most crucial skills needed to qualify for a role.
@@ -18,8 +39,23 @@ Skill Gap Identification: Students may not know which specific skills to focus o
 
 This tool directly addresses these issues by providing an automated, clear, and immediate analysis of job requirements, empowering users to make more informed decisions about their learning and career development.
 
-2. Technical Workflow & Methodology
-The application is the result of a systematic data analysis and NLP workflow performed in a series of data science notebooks. The core steps are outlined below.
+2. Key Features
+Automated Skill Extraction: Instantly parses job descriptions to identify key skills.
+
+Hard & Soft Skill Categorization: Intelligently separates technical abilities from interpersonal qualities.
+
+Data-Driven Dictionary: Utilizes a skill dictionary built from analyzing thousands of real-world job postings.
+
+Interactive Web Interface: A simple and user-friendly interface powered by Streamlit.
+
+Real-Time Analysis: Provides immediate feedback with no wait time.
+
+3. Technical Workflow & Methodology
+The application is the result of a systematic data analysis and NLP workflow performed in a series of data science notebooks.
+
+Job Description Text -> [Text Preprocessing] -> [Skill Extraction] -> Categorized Skills (Hard/Soft)
+
+The core steps are outlined below.
 
 Step 1: Data Loading & Skill Analysis
 Dataset: The project began with a dataset of job postings (all_job_post.csv), which included columns for job descriptions and their associated ground-truth skill sets.
@@ -58,10 +94,10 @@ Metrics: Precision, Recall, and F1-Score were calculated to measure the accuracy
 
 Error Analysis: False Positives (skills incorrectly extracted) and False Negatives (skills missed) were analyzed. This step was crucial for refining the skill dictionary and improving the model's recall.
 
-3. How to Use the Application
+4. How to Use the Application
 The deployed Streamlit application is simple and intuitive:
 
-Navigate to the application URL.
+Navigate to the Live Application URL.
 
 Find a job description you are interested in and copy its text.
 
@@ -71,7 +107,7 @@ Click the "Extract Skills" button.
 
 The application will display the extracted Hard and Soft Skills in two separate columns.
 
-4. Technologies Used
+5. Technologies Used
 Language: Python
 
 Web Framework: Streamlit
