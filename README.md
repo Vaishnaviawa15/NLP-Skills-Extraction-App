@@ -1,45 +1,33 @@
-🚀 NLP-Powered Skill Extractor for Job Descriptions
+🚀 NLP Skill Extractor
 <p align="center">
-<img src="https://i.imgur.com/your_gif_url_here.gif" alt="App Demo GIF" width="700"/>
+A Streamlit web app that uses NLP to instantly extract hard and soft skills from job descriptions.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python" alt="Python Version">
-<img src="https://img.shields.io/badge/Streamlit-1.10%2B-red?style=for-the-badge&logo=streamlit" alt="Streamlit Version">
-<img src="https://img.shields.io/badge/NLTK-3.7%2B-green?style=for-the-badge&logo=nltk" alt="NLTK Version">
+<img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python">
+<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-1.10%2B-red?style=for-the-badge&logo=streamlit">
+<img alt="NLTK" src="https://img.shields.io/badge/NLTK-3.7%2B-green?style=for-the-badge&logo=nltk">
 </p>
 
-This repository contains the source code for an interactive web application that automatically extracts and categorizes key skills from job descriptions. This tool is a functional component of a larger capstone project focused on personalized career prediction for students.
-
-Live Application: https://nlp-skills-extraction-app-miniproject.streamlit.app/
+<p align="center">
+<img src="https://i.imgur.com/your_gif_url_here.gif" alt="App Demo GIF" width="750"/>
+</p>
 
 📋 Table of Contents
-Project Overview & Problem Solved
+About the Project
 
 Key Features
 
-Technical Workflow & Methodology
-
-How to Use the Application
-
 Technologies Used
 
-1. Project Overview & Problem Solved
-🎯 Overview
-In the vast landscape of job opportunities, understanding the specific requirements for a role is a critical first step. This project provides a web-based tool, built with Python and Streamlit, that leverages Natural Language Processing (NLP) to demystify job descriptions. By simply pasting in the text of a job posting, users can instantly receive a structured list of the essential "Hard Skills" (technical competencies) and "Soft Skills" (interpersonal qualities) required for the position.
+Project Workflow
 
-🧩 The Problem It Solves
-For students and aspiring professionals, job descriptions can often be dense, filled with jargon, and difficult to parse. This creates a significant challenge:
+Live Application
 
-Lack of Clarity: It's hard to quickly identify the most crucial skills needed to qualify for a role.
+🎯 About the Project
+For students and professionals, job descriptions are often dense and difficult to parse. This tool solves that problem by providing an automated, clear, and immediate analysis of job requirements. It helps users quickly identify the crucial skills needed for a role, understand industry trends, and pinpoint personal skill gaps for career development. This application is a key component of a larger capstone project on personalized career prediction.
 
-Time-Consuming: Manually analyzing multiple job postings to understand industry trends is inefficient.
-
-Skill Gap Identification: Students may not know which specific skills to focus on developing for their desired career path.
-
-This tool directly addresses these issues by providing an automated, clear, and immediate analysis of job requirements, empowering users to make more informed decisions about their learning and career development.
-
-2. Key Features
+✨ Key Features
 Automated Skill Extraction: Instantly parses job descriptions to identify key skills.
 
 Hard & Soft Skill Categorization: Intelligently separates technical abilities from interpersonal qualities.
@@ -50,68 +38,29 @@ Interactive Web Interface: A simple and user-friendly interface powered by Strea
 
 Real-Time Analysis: Provides immediate feedback with no wait time.
 
-3. Technical Workflow & Methodology
-The application is the result of a systematic data analysis and NLP workflow performed in a series of data science notebooks.
+🛠️ Technologies Used
+Python: Core programming language.
 
-Job Description Text -> [Text Preprocessing] -> [Skill Extraction] -> Categorized Skills (Hard/Soft)
+Streamlit: For building the interactive web application.
 
-The core steps are outlined below.
+NLTK (Natural Language Toolkit): For NLP tasks like tokenization, stop word removal, and lemmatization.
 
-Step 1: Data Loading & Skill Analysis
-Dataset: The project began with a dataset of job postings (all_job_post.csv), which included columns for job descriptions and their associated ground-truth skill sets.
+Pandas: Used for data manipulation and analysis during the initial research phase.
 
-Skill Frequency Analysis: All skills from the dataset were extracted, cleaned (converted to lowercase, stripped of whitespace), and aggregated. A frequency count was performed using Python's collections.Counter to identify the most commonly required skills across thousands of job postings.
+⚙️ Project Workflow
+The application's logic was developed through a systematic NLP process:
 
-Step 2: Building a Data-Driven Skill Dictionary
-Categorization Logic: Based on the frequency analysis, the most common skills were selected to form the foundation of our skill dictionary. A function was created to categorize these skills into "Hard Skills" and "Soft Skills" based on a predefined list of technical keywords (e.g., 'sql', 'python', 'data', 'management').
+Data Analysis: Analyzed a large dataset of job postings to identify the most frequent skills.
 
-Final Dictionary (DATA_DRIVEN_SKILL_DB): The categorized lists were stored in a Python dictionary. This data-driven dictionary is more robust and relevant than a manually curated list, as it is based on real-world industry data.
+Dictionary Creation: Built a custom, data-driven skill dictionary categorized into "Hard" and "Soft" skills.
 
-Step 3: Text Preprocessing
-To prepare the raw job description text for analysis, a standard NLP preprocessing pipeline was implemented:
+Text Preprocessing: Established a pipeline to clean and prepare raw text for analysis (lemmatization, stop word removal, etc.).
 
-Lowercasing: All text was converted to lowercase to ensure uniformity.
+Skill Extraction: Implemented a regex-based pattern matching system to find and extract skills from the processed text.
 
-Punctuation Removal: All punctuation marks were removed using regular expressions.
+Validation: Evaluated the model's accuracy using metrics like Precision and Recall before deployment.
 
-Tokenization: The cleaned text was broken down into individual words or tokens using nltk.word_tokenize.
+🌐 Live Application
+You can access and use the live application here:
 
-Stop Word Removal: Common but non-meaningful words (e.g., "the", "a", "in") were filtered out using NLTK's English stop words list.
-
-Lemmatization: Words were converted to their base or root form (e.g., "running" -> "run", "studies" -> "study") using nltk.WordNetLemmatizer. This helps in matching different forms of the same skill.
-
-Step 4: Skill Extraction Logic
-Pattern Matching: The core extraction function iterates through every skill in our custom DATA_DRIVEN_SKILL_DB.
-
-Regex Search: For each skill, it constructs a regular expression pattern (r"\b" + skill + r"\b") to search for the skill as a whole word within the preprocessed job description. The \b ensures that "java" matches "java" but not "javascript".
-
-Output: The function returns a set of all unique skills found in the text.
-
-Step 5: Evaluation
-Before building the app, the model's performance was validated against the ground-truth data:
-
-Metrics: Precision, Recall, and F1-Score were calculated to measure the accuracy of the extraction logic.
-
-Error Analysis: False Positives (skills incorrectly extracted) and False Negatives (skills missed) were analyzed. This step was crucial for refining the skill dictionary and improving the model's recall.
-
-4. How to Use the Application
-The deployed Streamlit application is simple and intuitive:
-
-Navigate to the Live Application URL.
-
-Find a job description you are interested in and copy its text.
-
-Paste the text into the text area on the web page.
-
-Click the "Extract Skills" button.
-
-The application will display the extracted Hard and Soft Skills in two separate columns.
-
-5. Technologies Used
-Language: Python
-
-Web Framework: Streamlit
-
-NLP Library: NLTK (Natural Language Toolkit)
-
-Data Manipulation (for analysis): Pandas
+https://nlp-skills-extraction-app-mini.streamlit.app/
