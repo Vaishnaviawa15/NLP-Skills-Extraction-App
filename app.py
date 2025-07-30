@@ -5,37 +5,15 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 
-# --- Bulletproof NLTK Data Downloader ---
-# This function checks if the required NLTK data is present and downloads it if not.
-# This is a more reliable method for Streamlit Cloud deployment.
-def download_nltk_data():
-    """Downloads the necessary NLTK data models."""
-    try:
-        # Check for 'punkt' tokenizer
-        nltk.data.find('tokenizers/punkt')
-    except LookupError:
-        st.info("Downloading NLTK 'punkt' model...")
-        nltk.download('punkt', quiet=True)
-    try:
-        # Check for 'stopwords' corpus
-        nltk.data.find('corpora/stopwords')
-    except LookupError:
-        st.info("Downloading NLTK 'stopwords' model...")
-        nltk.download('stopwords', quiet=True)
-    try:
-        # Check for 'wordnet' corpus
-        nltk.data.find('corpora/wordnet')
-    except LookupError:
-        st.info("Downloading NLTK 'wordnet' model...")
-        nltk.download('wordnet', quiet=True)
 
-# Run the downloader function at the very start of the script
-download_nltk_data()
+st.info("Loading NLTK models...")
+nltk.download('punkt_tab', quiet=True)
+nltk.download('stopwords', quiet=True)
+nltk.download('wordnet', quiet=True)
+st.success("Models loaded successfully.")
 
 
 # --- Caching Resources for Speed ---
-# The @st.cache_data decorator tells Streamlit to run this function only once
-# and cache the result. This is efficient and prevents re-loading on every interaction.
 @st.cache_data
 def load_resources():
     """Loads and preprocesses all necessary data and models."""
