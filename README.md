@@ -58,4 +58,4 @@ The application's logic was developed through a systematic NLP process:
 
 You can access and use the live application here:
 
-https://nlp-skills-extraction-app-mini.streamlit.app/
+https://nlp-skills-extraction-app-miniproject.streamlit.app/
