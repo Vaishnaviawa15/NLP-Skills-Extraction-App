@@ -19,14 +19,10 @@ For students and professionals, job descriptions are often dense and difficult t
 
 ✨ Key Features
     1.Automated Skill Extraction: Instantly parses job descriptions to identify key skills.
-
     2.Hard & Soft Skill Categorization: Intelligently separates technical abilities from interpersonal qualities.
-
-  3.Data-Driven Dictionary: Utilizes a skill dictionary built from analyzing thousands of real-world job postings.
-
-   4.Interactive Web Interface: A simple and user-friendly interface powered by Streamlit.
-
-5.Real-Time Analysis: Provides immediate feedback with no wait time.
+    3.Data-Driven Dictionary: Utilizes a skill dictionary built from analyzing thousands of real-world job postings.
+    4.Interactive Web Interface: A simple and user-friendly interface powered by Streamlit.
+    5.Real-Time Analysis: Provides immediate feedback with no wait time.
 
 🛠️ Technologies Used
 Python: Core programming language.
